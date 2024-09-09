@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(4, 4, 104);
+    background-color: #FD841F;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    font-size: 0.8rem;
+    text-align: center;
+
+    
+    font-family: 'Baloo Bhai';
+    font-size: 14px;
+}
+
+.footer .container{
+    padding: 0.5rem 2rem;
+}

@@ -1,0 +1,151 @@
+.members-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.05); /* add 25% transparency black box */
+  position: relative;
+  }
+  
+  .members-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; /* add padding to create space between the box and the slider */
+    /*background-color: #fff;  add a white background color to the box */
+  }
+  
+  .members-overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; /* add padding to create space between the box and the slider */
+    /*background-color: #fff;  add a white background color to the box */
+  }
+  
+  .members-slide {
+    margin-bottom: 100px;
+  }
+  
+  .members-slide,
+  .member {
+    height: 200px;
+    width: 200px;
+    position: relative;
+  }
+  
+  
+  .members-slide img,
+  .member img {
+    width: 100%;
+    height: 100%;
+   
+    object-fit: cover;
+    /* object-fit: center; */
+    border-radius: 50%;
+    border: 2.5px solid #fff;
+  }
+  .members-slide p,
+  .member p {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .members-slide button,
+  .member button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #25D366;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .cta-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-buttons button {
+  /* background-color: #25D366; */
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* .nav-buttons button:hover {
+  background-color: #3e8e41;
+} */
+
+.prev{
+  background-color: tomato;
+}
+.prev:hover{
+  background-color: rgb(254, 38, 0);
+}
+.next{
+  background-color: rgb(1, 25, 207);
+}
+.next:hover{
+  background-color: rgb(7, 22, 139);
+}
+
+@media screen and (max-width: 564px) {
+  .nav-buttons {
+    gap: 10px;
+    bottom: 0px;
+  }
+  .nav-buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .cta-buttons{
+      gap: 1rem;
+  }
+  .cta-buttons .main-btn{
+      font-size: 0.8rem;
+  }
+  .cta-buttons .secondary-btn{
+      font-size: 0.8rem;
+  }
+}
+
+  @media screen and (max-width: 768px) {
+    .members-wrapper {
+      gap: 10px;
+    }
+  
+    .member {
+      width: calc(50% - 10px);
+      margin-bottom: 20px;
+    }
+  }
+  

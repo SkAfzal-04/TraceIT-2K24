@@ -1,0 +1,66 @@
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .data-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .data-heading{
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .datasheet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    /* margin-top: 20px; */
+  }
+  
+  .datasheet-btn {
+      display: inline-block;
+      background-color: #f79622;
+      color: white;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      padding: 0.3rem 0.7rem;
+      font-weight: 450;
+      width: fit-content;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+  }
+  
+  .datasheet-btn:hover{
+      transition: all 0.25s ease-in-out;
+      background-color: #be7317;
+  }
+  
+  /* Style for input text */
+  input[type="number"] {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      
+      height: 34px;
+    }
+    
+    /* Optional: Add focus style for better user experience */
+    input[type="number"]:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    

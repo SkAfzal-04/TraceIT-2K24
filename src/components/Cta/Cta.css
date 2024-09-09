@@ -1,0 +1,55 @@
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.cta-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    background-color: #363b46;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {
+        border-color: #ffc107;
+    }
+    50% {
+        border-color: #17a2b8;
+    }
+    100% {
+        border-color: #ffc107;
+    }
+}
+
+.cta-heading{
+    color: ivory;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.cta .main-btn{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+.cta .follow-btn1{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.cta .container{
+    padding: 4rem 2rem;
+}
+
+@media screen and (max-width: 700px){
+    .cta-heading{
+        font-size: 1.4rem;
+    }
+}

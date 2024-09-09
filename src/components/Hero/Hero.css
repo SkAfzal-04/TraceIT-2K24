@@ -1,0 +1,83 @@
+.trace-logo {
+    height: 50%;
+    width: 75%; 
+}
+
+/* img {
+    height: 25%;
+    width: 37%;
+    
+} */
+
+
+
+
+/* Container Fluid */
+.container-fluid{
+    padding: 0%;
+    background-color: black;
+}
+
+.intro{
+    /* padding-top: 2rem; */
+}
+
+.main-title{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #000000;
+    color: #FAF7F0;
+}
+
+.btn-div{
+    padding-top: 1.8rem;
+}
+
+.textStyle {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.borderBox1 {
+    background-color: black;
+    color: #FAF7F0;
+    border: 3px solid transparent;
+    border-radius: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* .main-btn{
+    margin-top: 7px;
+} */
+
+@keyframes glow {
+    0% {
+        border-color: #ffc107;
+    }
+    50% {
+        border-color: #17a2b8;
+    }
+    100% {
+        border-color: #ffc107;
+    }
+}
+
+@media (max-width: 762px){
+    .trace-logo{
+        width: 110%;
+    }
+
+    /* img{
+        width: 25%;
+    } */
+
+    .intro{
+        padding-top: 4rem;
+    }
+}

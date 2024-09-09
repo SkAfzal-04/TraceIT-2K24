@@ -1,0 +1,89 @@
+.navbar{
+    padding-top: 2% 3%;
+}
+
+.traceDes {
+    color: #31E1F7;
+}
+
+.logo{
+    width: 9rem;
+    border: 2px solid green;
+}
+
+.btn-div{
+    padding-top: 1.8rem;
+}
+
+/* .nav-link{
+    opacity: 0.6;
+}
+
+.nav-link:hover {
+    opacity: 1;
+  }
+ */
+
+ .nav-link {
+    opacity: 0.6;
+    position: relative;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #31E1F7; /* or any color you prefer */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .main-btn{
+    font-size: 0.9rem;
+    padding: 0.5rem 1.4rem;
+}
+
+.nav-btn{
+    /* margin-left: 8px; */
+    margin-top: 5px;
+    margin-right: 4px;
+}
+
+.follow-btn1{
+    font-size: 0.9rem;
+    padding: 0.5rem 1.4rem;
+    /* margin-left: 4px; */
+    margin-top: 6px;
+}
+
+@media (min-width: 768px) {
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #31E1F7; /* or any color you prefer */
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+        opacity: 1;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+}
